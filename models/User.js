@@ -1,4 +1,9 @@
+
+// Création du type de données de la base "User"
+
 const mongoose = require('mongoose');
+
+// Importation du module empechant la création de deux comptes avec le même email
 const uniqueValidator = require('mongoose-unique-validator');
 
 const userSchema = mongoose.Schema({
